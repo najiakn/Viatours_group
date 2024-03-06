@@ -1,0 +1,40 @@
+java.util.regex: pour utiliser les expression reguliere
+matcher :comparer la chaine d'entrer a l'expression reguliere:extraction des donne +modification du text;remplacer  des parties de la chaine
+public classe 
+
+-------------------------------------------------DEBUGGING-houssam
+definiton :
+le processus de rehchrcher et de correction les erreurs 
+
+les etapes: 
+identification les erreurs
+comprehension des errerus
+utilisation outils de debogage 
+correctio des erreurs + test et verification 
+
+------------------l'importance:
+
+comprendere le fonctionnement du code 
+assurance la qualite du code 
+
+
+------------------strategie:
+utilisation des point d'arret(poin rouge+debug)
+reproduction du probleme (tester dans autre envirenement)
+
+
+------------le gestion des erreurs
+type des erreurs :erreurs de syntaxe
+                  les erreurs de logique
+                  les erreurs d'execution (gestion le clavier) run time error
+
+-----------TRY -CATCH:pour afficher erreur 
+try{  //code }
+catch(TYpeDeLException e){//ArithmeticException e
+sout
+}
+
+
+
+
+
