@@ -33,3 +33,22 @@ color:black;
   border:none; 
   cursor: pointer; 
 }
+
+.Act1
+{
+    background-image: url("dest-09.jpg");
+    width: 100%;
+    padding-top: 50%;
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .Act1 h1{
+    position: absolute;
+    top: 70%;
+    left: 34%;
+    font-size:100px;
+    color:white;
+  }
