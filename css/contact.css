@@ -1,5 +1,6 @@
 /* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
 
 /* Applying Poppins font to all elements */
 
@@ -23,6 +24,7 @@ header .container {
     align-items: center;
     position: relative;
     padding-right: 191px;
+    padding: 3px;
 }
 
 .login {
@@ -53,118 +55,117 @@ header {
     width: 80%;
     margin: 0 auto;
 }
+
 /* background page */
-.mes  {
+
+
+.mes {
+    position: relative;
     background-image: url(Untitled-1.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 900px;
-    width: auto;
+    height: 600px;
+    background-color: transparent;
+    transition: background 0.3s, border-radius 0.3s;
+    z-index: 0;
 }
-h1 {
-    color: rgb(0, 0, 0);
-        max-width: 100%;
-        padding: 53px 0px 0px 103px; 
+
+.mes:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(129 125 103 / 53%);
+    z-index: -1;
+}
+
+.info {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .button {
+    /* opacity: 1; */
+    color: white;
+    background-color: orange;
+    padding: 10px;
     text-decoration: none;
-    margin-left : 149px;
-    background-color: aquamarine;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 4px;
-    color: black;
 }
-
-
-@media (min-width: 320px) and (max-width: 360px) 
-   {
-    .mes  {
-        background-image: url(Untitled-1.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 900px;
-        width: auto;
-    }
-    h1 {
-        color: rgb(0, 0, 0);
-        max-width: 100%;
-        padding: 46px 0px 0px 83px;
-        font-size: 30px;
-    }
-    .button {
-        text-decoration: none;
-        margin-left: 98px;
-        background-color: aquamarine;
-        border: 1px solid black;
-        border-radius: 5px;
-        padding: 4px;
-        color: black;
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1920px){
-    .mes  {
-        background-image: url(Untitled-1.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 900px;
-        width: auto;
-    }
-    h1 {
-        color: rgb(0, 0, 0);
-        max-width: 100%;
-        padding: 223px 0px 0px 553px; 
-        font-size: 60px;
-        text-decoration: none;
-    }
-    .button {
-        text-decoration: none;
-        margin-left: 651px;
-        background-color: aquamarine;
-        border: 1px solid black;
-        border-radius: 5px;
-        padding: 10px 10px;
-        color: black;
-        font-size: 20px;
-    }
-}
-
-/* container */
-.padded-boxes {
-    display:flex;
-    flex-wrap:wrap;
-    gap:2rem;
+h1 {
+    color: #fff;
+    font-size: 60px;
 }
 
 /* boxes */
-.padded-boxes > * {
-    width:100%;
-    background:#eee;
-    border-radius:.4rem;
-}
 
-/* headings */
-.padded-boxes .heading {
-    background:#f97171;
-    margin:0;
-    padding:1rem;
-    border-top-left-radius:.4rem;
-    border-top-right-radius:.4rem;
-}
 
-/* padded content */
-.padded-boxes .padded {
-    padding: 0.1rem 1rem;
+
+
+@media (max-width: 480px) {
+    .mes {
+        position: relative;
+        background-image: url(Untitled-1.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 600px;
+        background-color: transparent;
+        transition: background 0.3s, border-radius 0.3s;
+        z-index: 0;
+    }
     
+    .mes:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(129 125 103 / 53%);
+        z-index: -1;
+        height: 140px
+    } 
+    h1 {
+        color: #fff;
+        font-size: 30px;
+        margin-bottom: 110%;
+        margin-top: -15%;
+    }
 }
 
-/* tablet breakpoint */
-@media (min-width:768px) {
-    .padded-boxes > * {
-    width: calc((90% - 4rem) / 3);
-    display: grid;
-    margin-left: 40px;
+
+@media  (min-width: 1280px){
+    .mes {
+        position: relative;
+        background-image: url(Untitled-1.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 600px;
+        background-color: transparent;
+        transition: background 0.3s, border-radius 0.3s;
+        z-index: 0;
+    }
+    
+    .mes:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(129 125 103 / 53%);
+        z-index: -1;
+        height: 594px 
+    }
+    h1 {
+        color: #fff;
+        font-size: 60px;
+        margin-bottom: -21px;
     }
 }
