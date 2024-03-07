@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    text-decoration-line: none;
+}
+
+nav {
+  height: 70px;
+  padding: 0;
+  display: flex;
+  justify-content:flex-start;
+  background: #FDF0EA;
+  
+}
+ .logo {
+   margin: 17px; 
+   display: block;
+}
+ul{
+    margin-top: 21px;
+    display: block;
+}
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+ul li a {
+color:black;
+}
+.login {
+  padding: 10px 10px;
+  background-color: #EB662B; 
+  color: #fff;
+  border:none; 
+  cursor: pointer; 
+}
