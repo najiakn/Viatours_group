@@ -1,0 +1,461 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+/* Applying Poppins font to all elements */
+
+* {
+    font-family: "Poppins", sans-serif; 
+    margin-top: 2px;
+}
+
+/* Resetting default margin and font for body */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+/* Header Styles */
+
+header .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding-right: 191px;
+    padding: 3px;
+}
+
+.login {
+    background-color: #EB662B;
+    color: #ffffff;
+    padding: 10px 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header {
+    background-color: #FEF7F4;
+    color: #fff;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Existing styles for larger screens */
+
+/* Media query for screens with a maximum width of 480px */
+@media only screen and (max-width: 480px) {
+    header .container {
+        padding-right: 10px; /* Adjust padding as needed for smaller screens */
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list {
+        text-align: center;
+        padding: 0;
+        display: none; /* Hide the navigation list by default */
+    }
+
+    .hamburger-menu {
+        width: 30px;
+        height: 3px;
+        background-color: #000;
+        margin: 6px 0;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* background page */
+
+
+.mes {
+    position: relative;
+    background-image: url(Untitled-1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-color: transparent;
+    transition: background 0.3s, border-radius 0.3s;
+    z-index: 0;
+}
+
+.mes:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(129 125 103 / 53%);
+    z-index: -1;
+}
+
+.info {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.button {
+    /* opacity: 1; */
+    color: white;
+    background-color: orange;
+    padding: 10px;
+    text-decoration: none;
+}
+h1 {
+    color: #fff;
+    font-size: 60px;
+}
+
+/* boxes */
+
+
+
+
+@media (max-width: 480px) {
+    .mes {
+        position: relative;
+        background-image: url(Untitled-1.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 600px;
+        background-color: transparent;
+        transition: background 0.3s, border-radius 0.3s;
+        z-index: 0;
+    }
+    
+    .mes:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(129 125 103 / 53%);
+        z-index: -1;
+        height: 140px
+    } 
+    h1 {
+        color: #fff;
+        font-size: 30px;
+        margin-bottom: 110%;
+        margin-top: -15%;
+    }
+}
+
+
+@media  (min-width: 1280px){
+    .mes {
+        position: relative;
+        background-image: url(Untitled-1.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 600px;
+        background-color: transparent;
+        transition: background 0.3s, border-radius 0.3s;
+        z-index: 0;
+    }
+    
+    .mes:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(129 125 103 / 53%);
+        z-index: -1;
+        height: 594px 
+    }
+    h1 {
+        color: #fff;
+        font-size: 60px;
+        margin-bottom: -21px;
+    }
+}
+@media (max-width: 480px) {
+    .cont {
+        margin-left: 10%;
+        margin-top: -90%;
+        padding-right: 10px;
+        margin-left: 4%;
+        margin-right: -40%;
+    }
+    
+    form {
+        width: 300px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        width: 83%;
+        background-image: url(https://i.ibb.co/JmnX92n/ddzdzdz.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 15px 15px 15px 15px;
+        height: 500px;
+    }
+    
+    
+    
+    form input[type="email"],
+    form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    form input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    form input[type="submit"]  {
+        width: 100%;
+        padding: 10px;
+        background-color: #D57C48;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    
+    h2 {
+        margin-left: 37%;
+    }   
+    
+    .text {
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .email {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .textarea {
+       
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .title {
+        text-align: center;
+        margin-top: 10%;
+    }
+    .title h3 {
+        color: #D57C48;
+        font-family: "Reenie Beanie", Sans-serif;
+        font-size: 30px;
+        line-height: 1.5em;
+    }
+    
+    .title p {
+        color: #000000;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.2em;
+    }
+    
+    .submit {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+}
+
+
+
+@media  (min-width: 1280px) {
+    .cont {
+        margin-left: 10%;
+        margin-top: 10%;
+        /* padding-right: 10px; */
+    }
+    
+    form {
+        width: 300px;
+        margin: 0 auto;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: absolute;
+        width: 1175px;
+        background-image: url(https://i.ibb.co/JmnX92n/ddzdzdz.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 15px 15px 15px 15px;
+        height: 600px;
+    
+    }
+    
+    
+    
+    form input[type="email"],
+    form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    form input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    form input[type="submit"]  {
+        width: 100%;
+        padding: 10px;
+        background-color: #D57C48;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    
+    h2 {
+        margin-left: 37%;
+    }   
+    
+    .text {
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .email {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .textarea {
+       
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .title {
+        text-align: center;
+        margin-top: 10%;
+    }
+    .title h3 {
+        color: #D57C48;
+        font-family: "Reenie Beanie", Sans-serif;
+        font-size: 30px;
+        line-height: 1.5em;
+    }
+    
+    .title p {
+        color: #000000;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1.2em;
+    }
+    
+    .submit {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+}
+.menu-toggle {
+    display: none;
+}
+@media  (max-width: 480px) {
+    header .container {
+        padding-right: 10px; /* Adjust padding as needed for smaller screens */
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    nav.show-menu {
+        display: block;
+    }
+
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        background-color: #FEF7F4;
+        border: none;
+        cursor: pointer;
+        margin-left: 185px;
+    }
+}
+
+/* footer */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+/* footer */
+
+
+
+
+
