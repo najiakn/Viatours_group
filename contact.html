@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="Media/favicon.ico">
+    <title>Viatourss</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="https://i.ibb.co/d6XV2Cm/logo-svg.png" alt="Logo">
+            </a>
+            <button class="menu-toggle">&#9776;</button>
+            <nav>
+                <ul>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Activities</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#" class="login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector("nav");
+
+            menuToggle.addEventListener("click", function () {
+                nav.classList.toggle("show-menu");
+            });
+        });
+    </script>
+    <div class="mes">
+        <div class="info">
+        <h1>Contact Us</h1>    
+    </div> 
+    </div>
+    <div class="cont">
+        <form>
+            <div class="title">
+                <h3>Plan your Next Trip</h3>
+                <p>Get in Touch</p>
+            </div>
+            <div class="text"><input type="text" placeholder="TYPE YOUR NAME"></div>
+            <div class="email"><input type="email" placeholder="TYPE YOUR EMAIl"></div>
+            <div class="textarea"><textarea id="w3review" name="w3review" rows="5" cols="60" placeholder=""></textarea></div>
+            <div class="submit"><input type="submit"></div>
+        </form>
+    </div>   
+    <footer>
+        <div class="foot">
+            <div class="col1">
+            <div class="footer-logo">
+                <img src="Media/logo.svg.png" alt="viatours">
+            </div>
+                <p>
+                Explorez le monde avec Viatours :voyages exceptionnels,<br>découvertes inoubliables, <br>aventures uniques.
+                </p>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>  
+            <div class="col2">
+                <h5>Liens utiles</h5>
+                <ul>
+                    <li><a href="">Destination</a></li>
+                    <li><a href="">Activities</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>  
+            <div class="col3">
+                <h5>Contact</h5>
+                <div class="info-contact">
+                <p><i class="fa-regular fa-address-book"></i>bd Mohammed VI, 1°et. n°14, Grand Casablanca</p>
+                <p><i class="fa-solid fa-phone"></i>+2120523-30 0475</p>
+                <p><i class="fa-regular fa-envelope"></i>contact@viatours.com</p>
+                <p></p>
+            </div>
+            </div> 
+            
+               
+        </div> 
+        
+        <div class="copyright">
+            <hr> 
+            <p>Copyright &copy; 2024 Tous droits réservés par <a href="#">Viatours Voyage</a></p>
+        </div>
+</footer>   
+</body>
+</html>
