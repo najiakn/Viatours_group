@@ -1,0 +1,195 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Applying Poppins font to all elements */
+
+* {
+    font-family: Poppins; 
+}
+
+
+body {
+    margin: 0;
+}
+
+/* Header Styles */
+
+header .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding-right: 191px;
+}
+
+.login {
+    background-color: #EB662B;
+    color: #ffffff; 
+    padding: 10px 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+header {
+    background-color: #FEF7F4;
+    color: #fff;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Main Section Styles */
+
+.row {
+    background-color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+}
+.left b  {
+    color : #EB662B;
+}
+
+.row .right {
+    float: right;
+    padding: 70px;
+    margin-right: 90px;
+    margin-top: -50px;
+}
+
+.row .left {
+    float: left;
+    padding: 70px;
+    margin-left: 90px;
+}
+
+
+h3 {
+    margin-top: -30px;
+    margin-left: 70px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.section {
+    display: flex;
+    margin-left: 60px;
+}
+.section div{
+position: relative;
+  margin: 10px;
+  font-size: 15px;
+  margin: auto;
+  position: relative;
+  margin: 0 4px 12px 10px;
+  width: 500px;
+  margin-bottom: 90px;
+  margin-top: 50px;
+}
+.section  p h4 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #EB662B;
+    color: #ffffff; 
+    height: 25px;
+    width: 120px;
+    padding:  10px;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #FEF7F4;
+}
+.foot {
+    display: flex;
+    justify-content: flex-start;
+    padding: 31px;
+    gap: 10%;
+}
+.foot ul {
+    padding: 0px 0px 39px;
+    list-style-type: none;
+    
+}
+h5 foot {
+    font-size: 15px;
+    font-weight: bold;
+}
+.col {
+    margin: 15px;
+}
+.fa-regular, .far {
+    font-weight: 400;
+    margin: 5px;
+}
+.fa-solid, .fas {
+    font-weight: 900;
+    margin: 5px;
+}
+.fa-brands, .fab {
+    font-weight: 400;
+    background-color: #eb662b;
+    color: white;
+    /* height: 17px; */
+    /* width: 17px; */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h5 {
+    font-size: 20px;
+}
+.foot ul a {
+    padding: 0px 0px 39px;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+hr {
+    margin-bottom: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.copyright{
+    margin-bottom: -13px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.copyright a {
+    color: #eb662b;
+    font-weight: bold;
+}
+@media (max-width: 480px) {
+    .foot {
+        display: flex;
+        flex-direction:column;
+        margin-bottom: 10px;
+    }
+    
+}
