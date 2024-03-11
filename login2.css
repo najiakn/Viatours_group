@@ -104,7 +104,7 @@ main {
 
 form {
     width: 330px;
-    height: 500px;
+    height: 600px;
     margin-top: -10px;
 }
 
@@ -212,9 +212,158 @@ hr {
 }
 
 @media (max-width: 480px) {
+    form{
+        margin-left: -510px;
+        margin-top: 5px;
+        width: 500px;
+        height: 650px;
+        z-index: 1;
+        box-shadow: 40px 50px 90px 0 #612000;
+    }
+    
+   
+    .div_img{
+        margin-left:-60px ;
+        
+        
+    }
+    
     .foot {
         display: flex;
         flex-direction: column;
-        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    .form_image {
+        margin-left: 5px;
+        margin-top: 700px;
+        width: 400px;
+        height: 410px;
+      
+        box-shadow: none;
+        margin-left: -70px;
+    }
+   
+
+}
+
+
+
+
+
+header .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding-right: 191px;
+    padding: 3px;
+}
+
+ul {
+    padding: 15px 0px 5px 39px;
+}
+
+.login {
+    background-color: #EB662B;
+    color: #ffffff;
+    padding: 10px 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header {
+    background-color: #FEF7F4;
+    color: #fff;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Existing styles for larger screens */
+
+/* Media query for screens with a maximum width of 480px */
+@media only screen and (max-width: 480px) {
+    header .container {
+        padding-right: 10px; /* Adjust padding as needed for smaller screens */
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list {
+        text-align: center;
+        padding: 0;
+        display: none; /* Hide the navigation list by default */
+    }
+
+    .hamburger-menu {
+        width: 30px;
+        height: 3px;
+        background-color: #000;
+        margin: 6px 0;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        display: block;
+        cursor: pointer;
     }
 }
+
+.menu-toggle {
+    display: none;
+}
+@media  (max-width: 480px) {
+    header .container {
+        padding-right: 10px; /* Adjust padding as needed for smaller screens */
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    nav.show-menu {
+        display: block;
+    }
+
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        background-color: #FEF7F4;
+        border: none;
+        cursor: pointer;
+        margin-left: 200px;
+    }
+}
+
+
+
+
