@@ -199,7 +199,6 @@ h1 {
         bottom: 0;
         background-color: rgb(129 125 103 / 53%);
         z-index: -1;
-        height: 88%;
     }
     h1 {
         color: #fff;
@@ -506,7 +505,7 @@ hr {
     margin-right: 1%;
 }
 .copyright{
-    margin-bottom: 13px;
+    margin-bottom: -13px;
     margin-left: 2%;
     margin-right: 2%;
 }
